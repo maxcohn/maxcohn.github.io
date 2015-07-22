@@ -1,0 +1,18 @@
+body{
+	font-family: sans-serif;
+	text-align: center;
+	background-color:#D0E4FE;
+}
+.main{
+	font-size: 36px;
+}
+footer {
+	width: 100%;
+	bottom: 10px;
+	position: fixed;
+	height: 25px;
+	font-size: 10pt;
+}
+.footer-left{
+	float: left;
+}
