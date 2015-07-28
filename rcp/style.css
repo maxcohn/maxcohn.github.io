@@ -1,0 +1,23 @@
+body{
+	background-color:#D0E4FE;
+}
+h1{
+	text-align: center;
+	font-family: Arial;
+}
+#pasta{
+	text-align: center;
+	font-family: Arial;
+}
+footer{
+	position: absolute;
+	bottom: 3px;
+	text-align: center;
+	font-family: Arial;
+}
+button{
+	text-align: center;
+}
+.btn{
+	text-align: center;
+}
