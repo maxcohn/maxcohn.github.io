@@ -1,0 +1,12 @@
+body{
+	font-family: Arial;
+}
+.upgrade-area1{
+	float: right;
+	margin-right: 15%;
+}
+footer{
+	position: absolute;
+	bottom: 3px;
+	text-align: center;
+}
