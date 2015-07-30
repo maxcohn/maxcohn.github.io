@@ -1,9 +1,25 @@
 body{
 	font-family: Arial;
+	margin-top: 10px;
+}
+.click-area{
+	text-align: center;
 }
 .upgrade-area1{
-	float: right;
-	margin-right: 15%;
+	float: left;
+	margin-right: 25px;
+}
+.upgrade-area2{
+
+}
+.upgrade-area3{
+
+}
+.upgrade-area4{
+
+}
+.upgrade-area5{
+
 }
 footer{
 	position: absolute;

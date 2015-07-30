@@ -7,11 +7,11 @@
  * Thanks to David Stark (http://dhmstark.co.uk/) for a great tutorial for the basic ideas of building an incremental game
  */
  
-var version = 1;
+var version = 2;
 console.log("running"); //shows game is running in console
 
 //file variables are in files.js
-var bytes = 0
+var bytes = 0;
 
 //increase bytes by num
 function writeByte(num){
@@ -85,6 +85,46 @@ function buyBmp(){
     document.getElementById('bmpCost').innerHTML = nextCost;
 };
 
+//buy gif (5/s)
+function buyGif(){
+	var gifCost = Math.floor(150 * Math.pow(1.1,gif));
+    if(bytes >= gifCost){
+        gif = gif + 1;
+    	bytes = bytes - gifCost;
+        document.getElementById('gif').innerHTML = gif;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(100 * Math.pow(1.1,gif));
+    document.getElementById('gifCost').innerHTML = nextCost;	
+}
+
+//buy mp3 (7/s)
+function buyMp3(){
+	var mp3Cost = Math.floor(150 * Math.pow(1.1,mp3));
+    if(bytes >= mp3Cost){
+        mp3 = mp3 + 1;
+    	bytes = bytes - mp3Cost;
+        document.getElementById('mp3').innerHTML = mp3;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(250 * Math.pow(1.1,mp3));
+    document.getElementById('mp3Cost').innerHTML = nextCost;	
+}
+
+//buy wav (7/s)
+function buyWav(){
+	var wavCost = Math.floor(150 * Math.pow(1.1,wav));
+    if(bytes >= wavCost){
+        wav = wav + 1;
+    	bytes = bytes - wavCost;
+        document.getElementById('wav').innerHTML = wav;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(250 * Math.pow(1.1,wav));
+    document.getElementById('wavCost').innerHTML = nextCost;	
+}
+
+
 //add bytes earned by upgrades every second
 window.setInterval(function(){
 	
@@ -93,5 +133,8 @@ window.setInterval(function(){
 	writeByte(jpg * 3);
 	writeByte(png * 3);
 	writeByte(bmp * 3);
+	writeByte(gif * 5);
+	writeByte(mp3 * 7);
+	writeByte(wav * 7);
 	
 }, 1000);
