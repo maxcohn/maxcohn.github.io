@@ -63,7 +63,7 @@
 		<br />
 		gif: <span id="gif">0</span>
 		<br />
-		gif Cost: <span id="gifCost">150</span>
+		gif Cost: <span id="gifCost">250</span>
 	</div>
 	<br />
 	<div class="buy-mp3">
@@ -71,7 +71,7 @@
 		<br />
 		mp3: <span id="mp3">0</span>
 		<br />
-		mp3 Cost: <span id="mp3Cost">250</span>
+		mp3 Cost: <span id="mp3Cost">400</span>
 	</div>
 	<br />
 	<div class="buy-wav">
@@ -79,13 +79,43 @@
 		<br />
 		wav: <span id="wav">0</span>
 		<br />
-		wav Cost: <span id="wavCost">250</span>
+		wav Cost: <span id="wavCost">400</span>
 	</div>
 
 </div>
-
+<!-- Starting at upgrade-area3, buy methods are now buy_"name of format" instead of buy"name of format, capitalized" -->
 <div class="upgrade-area3">
-
+	<div class="buy-flac">
+		<button onclick="buy_flac();">Buy flac</button>
+		<br />
+		flac: <span id="flac">0</span>
+		<br />
+		flac Cost: <span id="flacCost">800</span>
+	</div>
+	<br />
+	<div class="buy-mp4">
+		<button onclick="buy_mp4();">Buy mp4</button>
+		<br />
+		mp4: <span id="mp4">0</span>
+		<br />
+		mp4 Cost: <span id="mp4Cost">1000</span>
+	</div>
+	<br />
+	<div class="buy-wmv">
+		<button onclick="buy_wmv();">Buy wmv</button>
+		<br />
+		wmv: <span id="wmv">0</span>
+		<br />
+		wmv Cost: <span id="wmvCost">1000</span>
+	</div>
+	<br />
+	<div class="buy-avi">
+		<button onclick="buy_avi();">Buy avi</button>
+		<br />
+		avi: <span id="avi">0</span>
+		<br />
+		avi Cost: <span id="aviCost">1000</span>
+	</div>
 </div>
 
 <div class="upgrade-area4">
