@@ -5,6 +5,9 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="files.js"></script>
 <script src="script.js"></script>
+<script src="buying.js"></script>
+<script src="achievements.js"></script>
+<script src="loops.js"></script>
 
 <title>Byte Writer</title>
 </head>
@@ -119,11 +122,46 @@
 </div>
 
 <div class="upgrade-area4">
-
+	<div class="buy-html">
+		<button onclick="buy_html();">Buy html</button>
+		<br />
+		html: <span id="html">0</span>
+		<br />
+		html Cost: <span id="htmlCost">10000</span>
+	</div>
+	<br />
+	<div class="buy-css">
+		<button onclick="buy_css();">Buy css</button>
+		<br />
+		css: <span id="css">0</span>
+		<br />
+		css Cost: <span id="cssCost">10000</span>
+	</div>
+	<br />
+	<div class="buy-js">
+		<button onclick="buy_js();">Buy js</button>
+		<br />
+		js: <span id="js">0</span>
+		<br />
+		js Cost: <span id="jsCost">10000</span>
+	</div>
+	<br />
+	<div class="buy-xml">
+		<button onclick="buy_xml();">Buy xml</button>
+		<br />
+		xml: <span id="xml">0</span>
+		<br />
+		xml Cost: <span id="xmlCost">10000</span>
+	</div>
 </div>
 
 <div class="upgrade-area5">
 
+</div>
+
+<br /><br /><br /><br /><br /><br /><br />
+<div class="achievement-area" id="achievement-area">
+	<h3><b>Achievements:</b></h3>
 </div>
 
 <footer><b>Byte Writer</b> - Created by Maxwell Cohn. Byte Writer is currently in early alpha.</footer>
