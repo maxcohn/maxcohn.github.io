@@ -5,6 +5,10 @@ body{
 .click-area{
 	text-align: center;
 }
+/* Begin upgrade areas */
+.upgrade-area{
+	
+}
 .upgrade-area1{
 	float: left;
 	margin-right: 25px;
@@ -18,10 +22,23 @@ body{
 	margin-right: 25px;
 }
 .upgrade-area4{
-
+	float: left;
+	margin-right: 25px;
 }
 .upgrade-area5{
-
+	float: left;
+	margin-right: 25px;
+}
+/* End upgrade areas */
+.achievement-area{
+	float: left;
+}
+.import-export-area{
+	float: right;
+} 
+/* float import and export buttons to the right */
+.import-export-area button{
+	float: right;
 }
 footer{
 	position: absolute;

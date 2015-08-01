@@ -208,3 +208,107 @@ function buy_xml(){
     var nextCost = Math.floor(10000 * Math.pow(1.1,xml));
     document.getElementById('xmlCost').innerHTML = nextCost;
 }
+
+//buy java (20/s)
+function buy_java(){
+	var javaCost = Math.floor(15000 * Math.pow(1.1,java));
+    if(bytes >= javaCost){
+        java = java + 1;
+    	bytes = bytes - javaCost;
+        document.getElementById('java').innerHTML = java;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(15000 * Math.pow(1.1,java));
+    document.getElementById('javaCost').innerHTML = nextCost;
+}
+
+//buy c (23/s)
+function buy_c(){
+	var cCost = Math.floor(20000 * Math.pow(1.1,c));
+    if(bytes >= cCost){
+        c = c + 1;
+    	bytes = bytes - cCost;
+        document.getElementById('c').innerHTML = c;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(20000 * Math.pow(1.1,c));
+    document.getElementById('cCost').innerHTML = nextCost;
+}
+
+//buy bat (25/s)
+function buy_bat(){
+	var batCost = Math.floor(25000 * Math.pow(1.1,bat));
+    if(bytes >= batCost){
+        bat = bat + 1;
+    	bytes = bytes - batCost;
+        document.getElementById('bat').innerHTML = bat;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(25000 * Math.pow(1.1,bat));
+    document.getElementById('batCost').innerHTML = nextCost;
+}
+
+//buy py (30/s)
+function buy_py(){
+	var pyCost = Math.floor(40000 * Math.pow(1.1,py));
+    if(bytes >= pyCost){
+        py = py + 1;
+    	bytes = bytes - pyCost;
+        document.getElementById('py').innerHTML = py;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(40000 * Math.pow(1.1,py));
+    document.getElementById('pyCost').innerHTML = nextCost;
+}
+
+//buy cs (35/s)
+function buy_cs(){
+	var csCost = Math.floor(50000 * Math.pow(1.1,cs));
+    if(bytes >= csCost){
+        cs = cs + 1;
+    	bytes = bytes - csCost;
+        document.getElementById('cs').innerHTML = cs;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(50000 * Math.pow(1.1,cs));
+    document.getElementById('csCost').innerHTML = nextCost;
+}
+
+//buy vb (50/s)
+function buy_vb(){
+	var vbCost = Math.floor(75000 * Math.pow(1.1,vb));
+    if(bytes >= vbCost){
+        vb = vb + 1;
+    	bytes = bytes - vbCost;
+        document.getElementById('vb').innerHTML = vb;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(75000 * Math.pow(1.1,vb));
+    document.getElementById('vbCost').innerHTML = nextCost;
+}
+
+//buy zip (75/s)
+function buy_zip(){
+	var zipCost = Math.floor(150000 * Math.pow(1.1,zip));
+    if(bytes >= zipCost){
+        zip = zip + 1;
+    	bytes = bytes - zipCost;
+        document.getElementById('zip').innerHTML = zip;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(150000 * Math.pow(1.1,zip));
+    document.getElementById('zipCost').innerHTML = nextCost;
+}
+
+//buy exe (100/s)
+function buy_exe(){
+	var exeCost = Math.floor(300000 * Math.pow(1.1,exe));
+    if(bytes >= exeCost){
+        exe = exe + 1;
+    	bytes = bytes - exeCost;
+        document.getElementById('exe').innerHTML = exe;
+        document.getElementById('bytes').innerHTML = bytes;
+    };
+    var nextCost = Math.floor(300000 * Math.pow(1.1,exe));
+    document.getElementById('exeCost').innerHTML = nextCost;
+}

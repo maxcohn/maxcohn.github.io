@@ -9,8 +9,7 @@
  * Thanks to David Stark (http://dhmstark.co.uk/) for a great tutorial for the basic ideas of building an incremental game
  */
  
-var version = 4;
-
+var version = 5; //Base game finished!
 console.log("running"); //shows game is running in console
 
 //file variables are in files.js

@@ -6,7 +6,7 @@ function checkTyper(){
 		if(txt >= 10){
 			achievements[1] = 1;
 			console.log("Achievement (Typer) has been earned");
-			document.getElementById("achievement-area").innerHTML = document.getElementById("achievement-area").innerHTML + "Typer";
+			document.getElementById("achievement-area").innerHTML = document.getElementById("achievement-area").innerHTML + " |Typer| ";
 		}		
 	}
 }
