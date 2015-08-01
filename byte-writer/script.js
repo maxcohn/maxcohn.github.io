@@ -15,7 +15,7 @@ console.log("running"); //shows game is running in console
 //file variables are in files.js
 
 //bytes are the main currency of the game
-var bytes = 10000;
+var bytes = 0;
 
 //0 means the achievement is not obtained, while 1 means the achievement has been earned | the first element of achievements
 var achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
