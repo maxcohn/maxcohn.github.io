@@ -9,7 +9,7 @@
  * Thanks to David Stark (http://dhmstark.co.uk/) for a great tutorial for the basic ideas of building an incremental game
  */
  
-var version = 5; //Base game finished!
+var version = 6; //Added more achievements and added folding to import/export area
 console.log("running"); //shows game is running in console
 
 //file variables are in files.js
@@ -24,4 +24,8 @@ var achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 function writeByte(num){
 	bytes = bytes + num;
 	document.getElementById("bytes").innerHTML = bytes;
+}
+
+function foldImportExport(){
+	$(".import-export-area").toggle("fold");
 }

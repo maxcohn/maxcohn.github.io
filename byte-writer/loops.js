@@ -33,7 +33,9 @@ window.setInterval(function(){
 //achievement loop (checks for new achievements every second)
 window.setInterval(function(){
 	
-	checkTyper();
+	checkTyper(); //10 txt files
+	checkSecretary(); //100 txt files
+	checkAudiophile(); //1000 audio files (mp3, wav, flac)
 	
 }, 1000);
 
