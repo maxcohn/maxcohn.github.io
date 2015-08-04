@@ -35,12 +35,15 @@ window.setInterval(function(){
 	
 	checkTyper(); //10 txt files
 	checkSecretary(); //100 txt files
-	checkAudiophile(); //1000 audio files (mp3, wav, flac)
+	checkAudiophile(); //100 audio files (mp3, wav, flac)
+	checkRedditor(); //100 image files (jpg, png, bmp, gif)
+	checkCinephile(); //100 video files (mp4, wmv, avi)
 	
 }, 1000);
 
 //make sure values are updated
 window.setInterval(function(){
+	document.getElementById("bytes").innerHTML = bytes;
 	
 	document.getElementById("txt").innerHTML = txt;
 	document.getElementById("tmp").innerHTML = tmp;
