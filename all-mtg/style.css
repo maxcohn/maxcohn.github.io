@@ -1,0 +1,18 @@
+body{
+	font-family: Arial;
+}
+h1{
+	text-align: center;
+}
+.actions{
+	text-align: center;
+}
+/* players life areas */
+.left-player{
+	float: left;
+	margin-left: 25%;
+}
+.right-player{
+	float: right;
+	margin-right: 25%;
+}
