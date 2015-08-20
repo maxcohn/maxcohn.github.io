@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- This game was made as a test to see if HTML is a good platform for text adventure games --->
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<script src="jquery-1.11.3.min.js"></script>
+<!-- some scripts imported at bottoms, so page is loaded --->
+
+<title>Text Adventure Test</title>
+
+
+</head>
+<body>
+
+<h1>HTML Text Adventure Test</h1>
+
+<div class="log-ui">
+	<textarea id="log" cols="75" rows="15" readonly></textarea>
+	<br/>
+	<!-- ui = User Input--->
+	<input id="ui" type="text" />
+
+	<button id="send">Send</button>
+</div>
+
+<div class="instructions">
+	<p>User "north", "south", "east", and west to move.</p>
+	<p>Pressing enter also send command</p>
+</div>
+
+<!-- import scripts at bottom, so page is loaded -->
+<script src="variables.js"></script>
+<script src="methods.js"></script>
+<script src="script.js"></script>
+<!-- end imports --->
+</body>
+</html>
