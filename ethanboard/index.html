@@ -9,10 +9,39 @@ body{
 	font-family: sans-serif, Arial, Helvetica;
 	background-color: #D0E4FE;
 }
+#footer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
 </style>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("body").keydown(function(event){
+		if(event.which == 80 || event.which == 32){
+			$('audio').each(function(){
+				this.pause(); //stop playing
+				this.currentTime = 0;
+				
+			});
+		}
+	});
+	
+});
+ 
+</script>
 
 </head>
 <body>
+
+<button onclick="document.getElementById('bacon').play()">Bacon</button>
+<audio id="bacon" hidden>
+<source src="media/bacon.ogg" type="audio/ogg">
+<source src="media/bacon.mp3" type="audio/mpeg">
+</audio>
 
 <button onclick="document.getElementById('cry').play()">Cry</button>
 <audio id="cry" hidden>
@@ -63,7 +92,9 @@ body{
 <source src="media/im-so-sorry.mp3" type="audio/mpeg">
 </audio>
 
-<p>Created my: Maxwell Cohn with the voice help of Ethan Lapine.</p>
+<p>Press "Space" or "P" to pause audio. Note: Button cannot be selected when "Space" pressed, or audio will restart.</p>
+
+<p id="footer">Created by: Maxwell Cohn with the voice help of Ethan Lapine.</p>
 
 </body>
 </html>
