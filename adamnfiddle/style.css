@@ -1,0 +1,14 @@
+body{
+	background: url("background-fiddle.png");
+	background-repeat: repeat;
+	margin: 0px;
+}
+.video-player{
+	float: both;
+}
+#fiddle{
+	width: 100%;
+}
+p{
+	color: white;
+}
