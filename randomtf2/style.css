@@ -1,0 +1,11 @@
+body{
+	font-family: sans-serif;
+	text-align: center;
+	background-color:#D0E4FE;
+}
+.items{
+	font-size: 36px;
+}
+#new-loadout{
+	margin-top: 10px;
+}
