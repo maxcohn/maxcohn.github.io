@@ -1,15 +1,20 @@
+//TODO
+//ADD NEW WEAPONS
+
+
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-var playerClass = ["Scout", "Soldier", "Pyro", "Demoman", "Heavy", "Engineer", "Medic", "Sniper", "Spy"];
+var playerClass = ["Scout", "Solider", "Pyro", "Demoman", "Heavy", "Engineer", "Medic", "Sniper", "Spy"];
 //Array #0
 var scoutPrimary = ["Scatter Gun", "Force-A-Nature", "Shortstop", "Soda Popper", "Baby Face's Blaster", "Back Scatter"];
 var scoutSecondary = ["Pistol", "Bonk! Atomic Punch", "Crit-a-Cola", "Mad Milk", "Winger", "Pretty Boy's Pocket Pistol", "Flying Guillotine"];
 var scoutMelee = ["Bat", "Sandman", "Candy Cane", "Boston Basher", "Son-on-a-Stick", "Fan O'War", "Atomizer", "Wrap Assassin"];
 //Array #1
-var soldierPrimary = ["Rocket Launcher", "Direct Hit", "Black Box", "Rocket Jumper", "Liberty Launcher", "Cow Mangler 5000", "Beggar's Bazooka", "Air Strike"];
-var soldierSecondary = ["Shotgun", "Buff Manner", "Gun Boats", "Battalion's Backup", "Concheror", "Mantreads", "Reserve Shooter", "Righteous Bison", "B.A.S.E Jumper"];
-var soldierMelee = ["Shovel", "Equalizer", "Pain Train", "Half-Zatoichi", "Disciplinary Action", "Market Gardener", "Escape Plan"];
+var soliderPrimary = ["Rocket Launcher", "Direct Hit", "Black Box", "Rocket Jumper", "Liberty Launcher", "Cow Mangler 5000", "Beggar's Bazooka", "Air Strike"];
+var soliderSecondary = ["Shotgun", "Buff Manner", "Gun Boats", "Battalion's Backup", "Concheror", "Mantreads", "Reserve Shooter", "Righteous Bison", "B.A.S.E Jumper"];
+var soliderMelee = ["Shovel", "Equalizer", "Pain Train", "Half-Zatoichi", "Disciplinary Action", "Market Gardener", "Escape Plan"];
 //Array #2
 var pyroPrimary = ["Flame Thrower", "Backburner", "Degreaser", "Pholgistinator"];
 var pyroSecondary = ["Shotgun", "Flare Gun", "Detonator", "Reserve Shooter", "Manmelter", "Scorch Shot"];
@@ -43,15 +48,12 @@ var spyWatch = ["Invis Watch", "Cloak and Dagger", "Dead Ringer"];
 var spySapper = ["Sapper", "Red-Tape Recorder"];
 var spyPda = ["Disguise Kit"]
 
+var playerClassNum = getRandomInt(0,8);
+var playerClassName = playerClass[playerClassNum];
 
-function getLoadout(classNum){
-	if(classNum != 9){
-		var playerClassNum = classNum;
-		
-	}else{
-		var playerClassNum = getRandomInt(0,8);
-	}
-	
+$(document).ready(function(){
+	//onload
+	var playerClassNum = getRandomInt(0,8);
 	var playerClassName = playerClass[playerClassNum];
 	if (playerClassNum == 0){
 		var scout1 = scoutPrimary[getRandomInt(0,scoutPrimary.length - 1)]
@@ -62,13 +64,13 @@ function getLoadout(classNum){
 		$(".items").append("<h3>" + scout2 + "</h3>");
 		$(".items").append("<h3>" + scout3 + "</h3>");
 	}else if (playerClassNum == 1){
-		var soldier1 = soldierPrimary[getRandomInt(0,soldierPrimary.length - 1)]
-		var soldier2 = soldierSecondary[getRandomInt(0,soldierSecondary.length - 1)]
-		var soldier3 = soldierMelee[getRandomInt(0,soldierMelee.length - 1)]		
+		var solider1 = soliderPrimary[getRandomInt(0,soliderPrimary.length - 1)]
+		var solider2 = soliderSecondary[getRandomInt(0,soliderSecondary.length - 1)]
+		var solider3 = soliderMelee[getRandomInt(0,soliderMelee.length - 1)]		
 		$(".items").append("<h1><b>" + playerClassName + "</b></h1>");	
-		$(".items").append("<h3>" + soldier1 + "</h3>");
-		$(".items").append("<h3>" + soldier2 + "</h3>");
-		$(".items").append("<h3>" + soldier3 + "</h3>");
+		$(".items").append("<h3>" + solider1 + "</h3>");
+		$(".items").append("<h3>" + solider2 + "</h3>");
+		$(".items").append("<h3>" + solider3 + "</h3>");
 	}else if (playerClassNum == 2){
 		var pyro1 = pyroPrimary[getRandomInt(0,pyroPrimary.length - 1)]
 		var pyro2 = pyroSecondary[getRandomInt(0,pyroSecondary.length - 1)]
@@ -125,7 +127,7 @@ function getLoadout(classNum){
 		var spy1 = spyPrimary[getRandomInt(0,spyPrimary.length - 1)]
 		var spy2 = spyMelee[getRandomInt(0,spyMelee.length - 1)]
 		var spy3 = spyWatch[getRandomInt(0,spyWatch.length - 1)]
-		var spy4 = spySapper[getRandomInt(0,spySapper.length - 1)]
+		var spy4 = spySapper[0]
 		var spy5 = spyPda[0]
 		$(".items").append("<h1><b>" + playerClassName + "</b></h1>");
 		$(".items").append("<h3>" + spy1 + "</h3>");
@@ -134,47 +136,9 @@ function getLoadout(classNum){
 		$(".items").append("<h3>" + spy4 + "</h3>");
 		$(".items").append("<h3>" + spy5 + "</h3>");
 	}
-}
-
-
-
-$(document).ready(function(){
-	//onload
-	getLoadout(9);
 	
 	$("#new-loadout").click(function(){
-
-
-		$(".items").remove();
-		$(".loadout").prepend("<div class='items'></div>");
-
-		//check #class-select
-		if($('#class-select option:selected').val() == "scout"){
-			getLoadout(0);
-		}else if($('#class-select option:selected').val() == "soldier"){
-			getLoadout(1);
-		}else if($('#class-select option:selected').val() == "pyro"){
-			getLoadout(2);
-		}else if($('#class-select option:selected').val() == "demoman"){
-			getLoadout(3);
-		}else if($('#class-select option:selected').val() == "heavy"){
-			getLoadout(4);
-		}else if($('#class-select option:selected').val() == "engineer"){
-			getLoadout(5);
-		}else if($('#class-select option:selected').val() == "medic"){
-			getLoadout(6);
-		}else if($('#class-select option:selected').val() == "sniper"){
-			getLoadout(7);
-		}else if($('#class-select option:selected').val() == "spy"){
-			getLoadout(8);
-		}else{
-			getLoadout(9);
-		}
-		
-	});
-
-	$("#class-select").change(function(){
-		$("#new-loadout").click();
+		location.reload();
 	});
 
 });
