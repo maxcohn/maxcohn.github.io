@@ -1,0 +1,18 @@
+body{
+	text-align: center;
+}
+/* text box with number that will be factored */
+#factored-num{
+	margin-top: 10px;
+	font-size: 18pt;
+}
+/* textarea that has factors in it */
+#factors{
+	resize: none;
+	width: 95%;
+	font-size: 16pt;
+}
+/* button that calculates factors */
+#calculate{
+	font-size: 16pt;
+}
