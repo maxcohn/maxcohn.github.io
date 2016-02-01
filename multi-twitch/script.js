@@ -2,7 +2,8 @@
 function addStream(){
 	var stream = prompt("Enter the username of the stream you would like to add.");
 	if(!(stream == null || stream.trim() == "")){
-		$(".stream").append("<iframe src='http://www.twitch.tv/" + stream + "/embed' frameborder='0' scrolling='no' height='378' width='620' style='margin: 10px;'></iframe>");
+		//change 'embed' to 'hls' when html5 player embeding is working properly
+		$(".stream").append("<iframe src='http://www.twitch.tv/" + stream + "/hls' frameborder='0' scrolling='no' height='378' width='620' style='margin: 10px;'></iframe>");
 	}
 }
 
