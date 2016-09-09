@@ -1,0 +1,75 @@
+.container{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+.new-note{
+	width: 60px;
+	height: 60px;
+	background-color: #1E90FF;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	border-radius: 50%;
+	font-size: 32pt;
+	display: table;
+}
+.new-note-plus{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.note-list{
+	width: 100%;
+}
+.note-container{
+	font-size: 24pt;
+	border-style: solid;
+	border-width: 2px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	white-space: nowrap;
+}
+.type-note{
+
+}
+.type-checklist{
+
+}
+.type-reminder{
+
+}
+.type-folder{
+
+}
+.note-edit-area{
+	width: 100%;
+	height: 100%;
+	font-size: 16pt;
+}
+.edit-header{
+	margin-top: 5px;
+	font-size: 24pt;
+}
+.edit-back{
+	float: left;
+}
+.edit-save{
+	float: right;
+}
+.note-option{
+	float: right;
+}
+.note-object{
+	width: 100%;
+}
+textarea{
+	resize: none;
+}
+.edit-header{
+	text-align: center;
+}
+.note-object{
+	
+}
