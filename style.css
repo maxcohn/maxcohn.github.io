@@ -33,3 +33,13 @@ p{
 .row div{
 	text-align: center;
 }
+/* For spacing between divs */
+.header{
+	margin-bottom: 100px;
+}
+.intro{
+	margin-bottom: 200px;
+}
+.about-me{
+	margin-bottom: 80px;
+}
