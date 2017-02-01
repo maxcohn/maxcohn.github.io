@@ -1,0 +1,17 @@
+Removed the following:
+	City maps (Google is more efficient)
+	Deerowld Golf course
+	departments
+	NYS links
+	Niagara county links
+	NT history museum. Website it linked to doesn't exist anymore, resulting in a dead link on the front page of the site
+	NT sports. contained highschool sport teams. Deemed unnecessary due to being on ntschools.org
+
+Changed the following:
+	Food/restaraunts (google does a better job)
+	Entertainment (google does a better job)
+	How do i get there? (google does a better job)
+	Tour North Tonawanda (links to "ExploreBuffalo.org"'s NT page. Has up to date content and the city won't have to maintain the page)
+
+Questions:
+	Would you like a separate page for departments, or is having them lumped in with everything else okay? Possibly have them on both pages?
