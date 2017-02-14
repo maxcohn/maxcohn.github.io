@@ -1,0 +1,8 @@
+-add in pages with info to contact members of the city
+-organize file directory
+-beautify pages
+-add about page
+-add contact page
+-check all page titles
+-check all page contact info
+-check all pages for typos
