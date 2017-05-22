@@ -17,15 +17,15 @@ img {
 }
 /*------------------------------ Sprites ------------------------------*/
 #navigation li, #navigation li a:hover, #navigation li.selected a {
-	background-image: url(../images/bg-menu.png);
+	/*(background-image: url(../images/bg-menu.png);*/
 	background-repeat: repeat-x;
 }
 #contents div.box, #contents div.box > div, #contents div.body {
-	background-image: url(../images/content-box.png);
+	/*background-image: url(../images/content-box.png);*/
 	background-repeat: no-repeat;
 }
 #main div.box, #main div.box > div, #main div.box > div > div {
-	background-image: url(../images/bg-box.png);
+	/*background-image: url(../images/bg-box.png);*/
 	background-repeat: no-repeat;
 }
 /*------------------------------ HEADER ------------------------------*/
@@ -35,6 +35,31 @@ img {
 	background: url("../sunset.jpg");
 	background-size: 100%;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    text-color: black;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    /*color: black;*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /** Logo **/
 #logo {
 	float: left;
@@ -43,7 +68,7 @@ img {
 }
 /** Navigation **/
 #navigation {
-	background: url(../images/bg-navigation.png) no-repeat;
+	background-color: #e65151;
 	clear: both;
 	height: 50px;
 	width: 860px;
@@ -60,7 +85,6 @@ img {
 #navigation li {
 	float: left;
 	background-position: 0 -118px;
-	background-repeat: no-repeat;
 	height: 49px;
 	width: 122px;
 	margin: 0;
@@ -73,7 +97,7 @@ img {
 	padding-left: 0;
 }
 #navigation li a {
-	color: #fff;
+	color: #000000;
 	display: block;
 	font: bold 14px/48px Arial, Helvetica, sans-serif;
 	height: 49px;
@@ -86,7 +110,6 @@ img {
 }
 #navigation li.selected a {
 	background-position: 0 0;
-	color: #e4e1bd;
 }
 /*------------------------------ CONTENTS ------------------------------*/
 #contents {
