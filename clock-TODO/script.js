@@ -32,7 +32,14 @@ function display({h, m, s}){
 time.seconds = 10000;
 
 
+
 $(document).ready(function(){
     display(time.format());
 
+
+
+    $("#set-timer").click(function(){
+        console.log("timer set");
+        alert("time");
+    });
 });
