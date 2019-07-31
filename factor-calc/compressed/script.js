@@ -1,1 +1,0 @@
-function getFactors(t){for(var a=[],c=0,o=1;t>=o;o++)c=t/o,c==Math.floor(c)&&a.push(o);return a}$(document).ready(function(){$("#calculate").click(function(){$("#factors").val(getFactors(Math.abs(parseInt($("#factored-num").val()))))})});

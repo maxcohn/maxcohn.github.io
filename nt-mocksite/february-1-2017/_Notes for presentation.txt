@@ -1,7 +1,0 @@
-made site more efficient with loading times (important in mobile world)
-removed unneccessary links and pages (weren't containing information that couldnt be found somewhere else easier)
-	-nt history museum. Website it linked to doesn't exist anymore, resulting in a dead link on the front page of the site
-	-nt sports. contained highschool sport teams. Deemed unnecessary due to being on ntschools.org
-	-many more
-changed links for food, entertainment, and directions (google gives accurate results with directions and reviews)
-modern design
