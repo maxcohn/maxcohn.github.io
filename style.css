@@ -1,45 +1,12 @@
 body{
-	margin-left: 20px;
-	margin-right: 20px;
+	text-align: center;
 	font-family: 'Roboto Condensed', sans-serif;
-	background: url("media/background.png");
+	background-color: #FFFFFF;
 }
-h1{
-	text-align: center;
-	font-size: 72px;
+h1 {
+	font-size: 72pt;
 }
-h2{
-	text-align: center;
-	font-size: 48px;
-}
-h3{
-	text-align: center;
-	font-size: 36px;
-}
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-}
-p{
-	text-align: center;
-	font-size: 30px;
-}
-.row img{
-	max-width:100%;
-	max-height:100%;
-}
-.row div{
-	text-align: center;
-}
-/* For spacing between divs */
-.header{
-	margin-bottom: 100px;
-}
-.intro{
-	margin-bottom: 200px;
-}
-.about-me{
-	margin-bottom: 80px;
+
+p {
+	font-size: 20pt;
 }
